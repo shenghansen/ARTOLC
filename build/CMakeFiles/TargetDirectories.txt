@@ -1,0 +1,4 @@
+/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles/artolc.dir
+/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles/tree.dir
+/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles/edit_cache.dir
+/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles/rebuild_cache.dir
