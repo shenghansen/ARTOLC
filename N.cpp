@@ -7,6 +7,8 @@
 #include "N48.cpp"
 #include "N256.cpp"
 
+
+
 namespace ART_OLC {
 
     void N::setType(NTypes type) {
@@ -112,7 +114,7 @@ namespace ART_OLC {
             return;
         }
 
-        auto nBig = new biggerN(n->getPrefix(), n->getPrefixLength());
+        auto nBig = new(n->getPrefix(), n->getPrefixLength()) biggerN(n->getPrefix(), n->getPrefixLength());
         n->copyTo(nBig);
         nBig->insert(key, val);
 
@@ -224,7 +226,7 @@ namespace ART_OLC {
             return;
         }
 
-        auto nSmall = new smallerN(n->getPrefix(), n->getPrefixLength());
+        auto nSmall = new (n->getPrefix(), n->getPrefixLength())smallerN(n->getPrefix(), n->getPrefixLength());
 
         n->copyTo(nSmall);
         nSmall->remove(key);

@@ -69,28 +69,28 @@ include CMakeFiles/tree.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tree.dir/flags.make
 
-CMakeFiles/tree.dir/Tree.cpp.o: CMakeFiles/tree.dir/flags.make
-CMakeFiles/tree.dir/Tree.cpp.o: ../Tree.cpp
-CMakeFiles/tree.dir/Tree.cpp.o: CMakeFiles/tree.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tree.dir/Tree.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tree.dir/Tree.cpp.o -MF CMakeFiles/tree.dir/Tree.cpp.o.d -o CMakeFiles/tree.dir/Tree.cpp.o -c /mnt/nvme0/home/shs/ARTOLC/Tree.cpp
+CMakeFiles/tree.dir/Tree.o: CMakeFiles/tree.dir/flags.make
+CMakeFiles/tree.dir/Tree.o: ../Tree.cpp
+CMakeFiles/tree.dir/Tree.o: CMakeFiles/tree.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tree.dir/Tree.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tree.dir/Tree.o -MF CMakeFiles/tree.dir/Tree.o.d -o CMakeFiles/tree.dir/Tree.o -c /mnt/nvme0/home/shs/ARTOLC/Tree.cpp
 
-CMakeFiles/tree.dir/Tree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tree.dir/Tree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/nvme0/home/shs/ARTOLC/Tree.cpp > CMakeFiles/tree.dir/Tree.cpp.i
+CMakeFiles/tree.dir/Tree.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tree.dir/Tree.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/nvme0/home/shs/ARTOLC/Tree.cpp > CMakeFiles/tree.dir/Tree.i
 
-CMakeFiles/tree.dir/Tree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tree.dir/Tree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/nvme0/home/shs/ARTOLC/Tree.cpp -o CMakeFiles/tree.dir/Tree.cpp.s
+CMakeFiles/tree.dir/Tree.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tree.dir/Tree.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/nvme0/home/shs/ARTOLC/Tree.cpp -o CMakeFiles/tree.dir/Tree.s
 
 # Object files for target tree
 tree_OBJECTS = \
-"CMakeFiles/tree.dir/Tree.cpp.o"
+"CMakeFiles/tree.dir/Tree.o"
 
 # External object files for target tree
 tree_EXTERNAL_OBJECTS =
 
-libtree.a: CMakeFiles/tree.dir/Tree.cpp.o
+libtree.a: CMakeFiles/tree.dir/Tree.o
 libtree.a: CMakeFiles/tree.dir/build.make
 libtree.a: CMakeFiles/tree.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtree.a"

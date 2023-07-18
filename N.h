@@ -11,6 +11,7 @@
 #include <string.h>
 #include "Key.h"
 #include "Epoche.h"
+#include <numa.h>
 
 using TID = uint64_t;
 
@@ -22,6 +23,8 @@ namespace ART_OLC {
  * LockCheckFreeReadTree
  * UnsynchronizedTree
  */
+
+    const size_t NUMA_NODE = 4;
 
     enum class NTypes : uint8_t {
         N4 = 0,
@@ -39,6 +42,30 @@ namespace ART_OLC {
         N(NTypes type, const uint8_t *prefix, uint32_t prefixLength) {
             setType(type);
             setPrefix(prefix, prefixLength);
+        }
+
+        //reload new
+        void* operator new(size_t size, NTypes type, const uint8_t *prefix, uint32_t prefixLength){
+            //printf("reload new N \n");
+            void* n = numa_alloc_onnode(size, NUMA_NODE);
+            if(n == nullptr){
+                //printf("numa alloc failed \n");
+            }else{
+                //printf("%p\n", n);
+                static_cast<N *>(n)->setType(type);
+                static_cast<N *>(n)->setPrefix(prefix, prefixLength);
+            }
+            return n;
+        }
+
+        //reload delete
+        void operator delete(void *p){
+            //printf("numa free N \n");
+            if(p==nullptr){
+                //printf("numa free nullptr \n");
+                return ;
+            }
+            numa_free(p, sizeof(N));
         }
 
         N(const N &) = delete;
@@ -142,6 +169,30 @@ namespace ART_OLC {
     public:
         N4(const uint8_t *prefix, uint32_t prefixLength) : N(NTypes::N4, prefix,
                                                                              prefixLength) { }
+        //reload new
+        void* operator new(size_t size,const uint8_t *prefix, uint32_t prefixLength){
+            //printf("reload new N4 \n");
+            void* n = numa_alloc_onnode(size, NUMA_NODE);
+            if(n == nullptr){
+                //printf("numa alloc failed \n");
+            }else{
+                //printf("%p\n", n);
+                // auto n4= static_cast<N4 *>(n);
+                // n4->setType(NTypes::N4);
+                // n4->setPrefix(prefix, prefixLength);
+            }
+            return n;
+        }
+
+        //reload delete
+        void operator delete(void *p){
+            //printf("numa free N4 \n");
+            if(p==nullptr){
+                //printf("numa free nullptr \n");
+                return ;
+            }
+            numa_free(p, sizeof(N4));
+        }   
 
         void insert(uint8_t key, N *n);
 
@@ -201,6 +252,33 @@ namespace ART_OLC {
             memset(children, 0, sizeof(children));
         }
 
+                //reload new
+        void* operator new(size_t size,const uint8_t *prefix, uint32_t prefixLength){
+            //printf("reload new N16 \n");
+            void* n = numa_alloc_onnode(size, NUMA_NODE);
+            if(n == nullptr){
+                //printf("numa alloc failed \n");
+            }else{
+                //printf("%p\n", n);
+                // auto n16 = static_cast<N16 *>(n);
+                // n16->setType(NTypes::N16);
+                // n16->setPrefix(prefix, prefixLength);
+                // memset(n16->keys, 0, sizeof(n16->keys));
+                // memset(n16->children, 0, sizeof(n16->children));
+            }
+            return n;
+        }
+
+        //reload delete
+        void operator delete(void *p){
+            //printf("numa free N16 \n");
+            if(p==nullptr){
+                //printf("numa free nullptr \n");
+                return ;
+            }
+            numa_free(p, sizeof(N16));
+        }   
+
         void insert(uint8_t key, N *n);
 
         template<class NODE>
@@ -226,7 +304,7 @@ namespace ART_OLC {
 
     class N48 : public N {
         uint8_t childIndex[256];
-        N *children[48];
+        N* children[48];
     public:
         static const uint8_t emptyMarker = 48;
 
@@ -235,6 +313,30 @@ namespace ART_OLC {
             memset(childIndex, emptyMarker, sizeof(childIndex));
             memset(children, 0, sizeof(children));
         }
+
+        //reload new
+        void* operator new(size_t size,const uint8_t *prefix, uint32_t prefixLength){
+            //printf("reload new N48 \n");
+            void* n = numa_alloc_onnode(size, NUMA_NODE);
+            if(n == nullptr){
+                //printf("numa alloc failed \n");
+            }else{
+                //printf("%p\n", n);
+                // static_cast<N48 *>(n)->setType(NTypes::N48);
+                // static_cast<N48 *>(n)->setPrefix(prefix, prefixLength);
+            }
+            return n;
+        }
+
+        //reload delete
+        void operator delete(void *p){
+            //printf("numa free N48\n");
+            if(p==nullptr){
+                //printf("numa free nullptr \n");
+                return ;
+            }
+            numa_free(p, sizeof(N48));
+        }   
 
         void insert(uint8_t key, N *n);
 
@@ -267,6 +369,34 @@ namespace ART_OLC {
                                                                                prefixLength) {
             memset(children, '\0', sizeof(children));
         }
+
+        //reload new
+        void* operator new(size_t size,const uint8_t *prefix, uint32_t prefixLength){
+            //printf("reload new N256 \n");
+            void* n = numa_alloc_onnode(size, NUMA_NODE);
+            if(n == nullptr){
+                //printf("numa alloc failed \n");
+            }else{
+                //printf("%p,%ld\n", n,size);
+                // static_cast<N256 *>(n)->setType(NTypes::N256);
+                // static_cast<N256 *>(n)->setPrefix(prefix, prefixLength);
+            }
+            return n;
+        }
+
+        //reload delete
+        void operator delete(void *p){
+            //printf("numa free N256\n");
+            if(p==nullptr){
+                //printf("numa free nullptr \n");
+                return ;
+            }else{
+                //printf("%p,%ld\n", p,sizeof(N256));
+            }
+            numa_free(p, sizeof(N256));
+            //printf("free N256 over\n");
+            // free(p);
+        }   
 
         void insert(uint8_t key, N *val);
 

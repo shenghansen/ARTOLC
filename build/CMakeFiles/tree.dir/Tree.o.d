@@ -1,4 +1,4 @@
-CMakeFiles/tree.dir/Tree.cpp.o: /mnt/nvme0/home/shs/ARTOLC/Tree.cpp \
+CMakeFiles/tree.dir/Tree.o: /mnt/nvme0/home/shs/ARTOLC/Tree.cpp \
  /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

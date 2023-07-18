@@ -1,0 +1,241 @@
+//原始版本
+n=100000000,第1次执行，x=0\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,70.963658
+lookup,100000000,412.808626
+remove,100000000,115.804809
+n=100000000,第2次执行，x=0\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,70.099289
+lookup,100000000,415.905905
+remove,100000000,112.829377
+n=100000000,第3次执行，x=0\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,69.021353
+lookup,100000000,416.614590
+remove,100000000,112.918561
+n=100000000,第4次执行，x=0\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,88.561644
+lookup,100000000,411.353353
+remove,100000000,119.583181
+n=100000000,第5次执行，x=0\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,72.261958
+lookup,100000000,410.571392
+remove,100000000,112.439648
+n=100000000,第6次执行，x=0\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,68.353027
+lookup,100000000,416.170730
+remove,100000000,114.648133
+n=100000000,第7次执行，x=0\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,70.280391
+lookup,100000000,413.110474
+remove,100000000,119.574315
+n=100000000,第8次执行，x=0\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,83.728252
+lookup,100000000,410.606795
+remove,100000000,119.973558
+n=100000000,第9次执行，x=0\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,72.354188
+lookup,100000000,415.567145
+remove,100000000,116.900819
+n=100000000,第10次执行，x=0\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,71.123351
+lookup,100000000,408.949450
+remove,100000000,116.854510
+n=100000000,第1次执行，x=1\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,47.870940
+lookup,100000000,290.976809
+remove,100000000,152.901224
+n=100000000,第2次执行，x=1\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,54.395392
+lookup,100000000,312.963577
+remove,100000000,129.442130
+n=100000000,第3次执行，x=1\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,59.067513
+lookup,100000000,313.154689
+remove,100000000,155.516884
+n=100000000,第4次执行，x=1\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,57.060690
+lookup,100000000,312.459966
+remove,100000000,144.954006
+n=100000000,第5次执行，x=1\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,54.027887
+lookup,100000000,312.909716
+remove,100000000,152.519934
+n=100000000,第6次执行，x=1\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,38.765670
+lookup,100000000,304.460344
+remove,100000000,102.918882
+n=100000000,第7次执行，x=1\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,47.659354
+lookup,100000000,287.602602
+remove,100000000,146.288871
+n=100000000,第8次执行，x=1\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,42.805562
+lookup,100000000,284.776963
+remove,100000000,132.009716
+n=100000000,第9次执行，x=1\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,56.275982
+lookup,100000000,278.310433
+remove,100000000,132.331321
+n=100000000,第10次执行，x=1\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,51.551069
+lookup,100000000,285.241600
+remove,100000000,150.983735
+n=100000000,第1次执行，x=2\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,37.034499
+lookup,100000000,227.991938
+remove,100000000,79.134960
+n=100000000,第2次执行，x=2\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,36.875808
+lookup,100000000,228.148506
+remove,100000000,76.136180
+n=100000000,第3次执行，x=2\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,37.954395
+lookup,100000000,223.443715
+remove,100000000,80.583099
+n=100000000,第4次执行，x=2\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,37.032840
+lookup,100000000,227.424688
+remove,100000000,80.377517
+n=100000000,第5次执行，x=2\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,35.332168
+lookup,100000000,224.082606
+remove,100000000,81.748636
+n=100000000,第6次执行，x=2\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,36.838057
+lookup,100000000,228.362118
+remove,100000000,75.812942
+n=100000000,第7次执行，x=2\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,37.390879
+lookup,100000000,228.125606
+remove,100000000,82.375648
+n=100000000,第8次执行，x=2\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,38.475597
+lookup,100000000,243.201307
+remove,100000000,79.064384
+n=100000000,第9次执行，x=2\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,36.343667
+lookup,100000000,227.013725
+remove,100000000,81.620993
+n=100000000,第10次执行，x=2\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,36.962933
+lookup,100000000,227.112200
+remove,100000000,78.469161
+n=100000000,第1次执行，x=3\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,75.463155
+lookup,100000000,409.389764
+remove,100000000,115.508254
+n=100000000,第2次执行，x=3\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,73.635046
+lookup,100000000,410.357421
+remove,100000000,118.863805
+n=100000000,第3次执行，x=3\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,75.773649
+lookup,100000000,411.131805
+remove,100000000,119.341711
+n=100000000,第4次执行，x=3\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,73.919500
+lookup,100000000,407.712286
+remove,100000000,118.309872
+n=100000000,第5次执行，x=3\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,75.586133
+lookup,100000000,414.131835
+remove,100000000,117.930369
+n=100000000,第6次执行，x=3\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,76.004417
+lookup,100000000,405.919936
+remove,100000000,119.913279
+n=100000000,第7次执行，x=3\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,74.353312
+lookup,100000000,408.416650
+remove,100000000,119.045068
+n=100000000,第8次执行，x=3\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,75.056874
+lookup,100000000,410.522513
+remove,100000000,119.365501
+n=100000000,第9次执行，x=3\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,89.050129
+lookup,100000000,407.546124
+remove,100000000,126.817935
+n=100000000,第10次执行，x=3\n
+multi threaded:
+operation,n,ops/s
+insert,100000000,75.013521
+lookup,100000000,411.829387
+remove,100000000,120.057820

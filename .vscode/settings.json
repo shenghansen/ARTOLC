@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.cu": "cuda-cpp",
+        "*.dox": "doxygen",
+        "*.tcc": "cpp",
+        "cstdio": "cpp",
+        "list": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "functional": "cpp",
+        "type_traits": "cpp",
+        "new": "cpp"
+    }
+}

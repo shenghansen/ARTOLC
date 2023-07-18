@@ -69,28 +69,28 @@ include CMakeFiles/artolc.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/artolc.dir/flags.make
 
-CMakeFiles/artolc.dir/example.cpp.o: CMakeFiles/artolc.dir/flags.make
-CMakeFiles/artolc.dir/example.cpp.o: ../example.cpp
-CMakeFiles/artolc.dir/example.cpp.o: CMakeFiles/artolc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/artolc.dir/example.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/artolc.dir/example.cpp.o -MF CMakeFiles/artolc.dir/example.cpp.o.d -o CMakeFiles/artolc.dir/example.cpp.o -c /mnt/nvme0/home/shs/ARTOLC/example.cpp
+CMakeFiles/artolc.dir/example.o: CMakeFiles/artolc.dir/flags.make
+CMakeFiles/artolc.dir/example.o: ../example.cpp
+CMakeFiles/artolc.dir/example.o: CMakeFiles/artolc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/artolc.dir/example.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/artolc.dir/example.o -MF CMakeFiles/artolc.dir/example.o.d -o CMakeFiles/artolc.dir/example.o -c /mnt/nvme0/home/shs/ARTOLC/example.cpp
 
-CMakeFiles/artolc.dir/example.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/artolc.dir/example.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/nvme0/home/shs/ARTOLC/example.cpp > CMakeFiles/artolc.dir/example.cpp.i
+CMakeFiles/artolc.dir/example.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/artolc.dir/example.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/nvme0/home/shs/ARTOLC/example.cpp > CMakeFiles/artolc.dir/example.i
 
-CMakeFiles/artolc.dir/example.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/artolc.dir/example.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/nvme0/home/shs/ARTOLC/example.cpp -o CMakeFiles/artolc.dir/example.cpp.s
+CMakeFiles/artolc.dir/example.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/artolc.dir/example.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/nvme0/home/shs/ARTOLC/example.cpp -o CMakeFiles/artolc.dir/example.s
 
 # Object files for target artolc
 artolc_OBJECTS = \
-"CMakeFiles/artolc.dir/example.cpp.o"
+"CMakeFiles/artolc.dir/example.o"
 
 # External object files for target artolc
 artolc_EXTERNAL_OBJECTS =
 
-artolc: CMakeFiles/artolc.dir/example.cpp.o
+artolc: CMakeFiles/artolc.dir/example.o
 artolc: CMakeFiles/artolc.dir/build.make
 artolc: libtree.a
 artolc: CMakeFiles/artolc.dir/link.txt

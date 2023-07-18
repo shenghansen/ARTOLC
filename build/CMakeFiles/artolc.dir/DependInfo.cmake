@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/nvme0/home/shs/ARTOLC/example.cpp" "CMakeFiles/artolc.dir/example.cpp.o" "gcc" "CMakeFiles/artolc.dir/example.cpp.o.d"
+  "/mnt/nvme0/home/shs/ARTOLC/example.cpp" "CMakeFiles/artolc.dir/example.o" "gcc" "CMakeFiles/artolc.dir/example.o.d"
   )
 
 # Targets to which this target links.

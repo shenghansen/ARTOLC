@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/nvme0/home/shs/ARTOLC/Tree.cpp" "CMakeFiles/tree.dir/Tree.cpp.o" "gcc" "CMakeFiles/tree.dir/Tree.cpp.o.d"
+  "/mnt/nvme0/home/shs/ARTOLC/Tree.cpp" "CMakeFiles/tree.dir/Tree.o" "gcc" "CMakeFiles/tree.dir/Tree.o.d"
   )
 
 # Targets to which this target links.

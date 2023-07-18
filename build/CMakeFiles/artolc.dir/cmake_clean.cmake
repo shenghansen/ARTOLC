@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/artolc.dir/example.cpp.o"
-  "CMakeFiles/artolc.dir/example.cpp.o.d"
+  "CMakeFiles/artolc.dir/example.o"
+  "CMakeFiles/artolc.dir/example.o.d"
   "artolc"
   "artolc.pdb"
 )

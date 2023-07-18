@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/artolc.dir/example.cpp.o -o artolc   -L/mnt/nvme0/home/shs/ARTOLC/build  -ltbb libtree.a 
+/usr/bin/c++ -rdynamic CMakeFiles/artolc.dir/example.o -o artolc   -L/mnt/nvme0/home/shs/ARTOLC/build  -ltbb libtree.a -lnuma 

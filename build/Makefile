@@ -142,53 +142,35 @@ tree/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree.dir/build.make CMakeFiles/tree.dir/build
 .PHONY : tree/fast
 
-Tree.o: Tree.cpp.o
+# target to build an object file
+Tree.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree.dir/build.make CMakeFiles/tree.dir/Tree.o
 .PHONY : Tree.o
 
-# target to build an object file
-Tree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree.dir/build.make CMakeFiles/tree.dir/Tree.cpp.o
-.PHONY : Tree.cpp.o
-
-Tree.i: Tree.cpp.i
+# target to preprocess a source file
+Tree.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree.dir/build.make CMakeFiles/tree.dir/Tree.i
 .PHONY : Tree.i
 
-# target to preprocess a source file
-Tree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree.dir/build.make CMakeFiles/tree.dir/Tree.cpp.i
-.PHONY : Tree.cpp.i
-
-Tree.s: Tree.cpp.s
+# target to generate assembly for a file
+Tree.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree.dir/build.make CMakeFiles/tree.dir/Tree.s
 .PHONY : Tree.s
 
-# target to generate assembly for a file
-Tree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree.dir/build.make CMakeFiles/tree.dir/Tree.cpp.s
-.PHONY : Tree.cpp.s
-
-example.o: example.cpp.o
+# target to build an object file
+example.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/artolc.dir/build.make CMakeFiles/artolc.dir/example.o
 .PHONY : example.o
 
-# target to build an object file
-example.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/artolc.dir/build.make CMakeFiles/artolc.dir/example.cpp.o
-.PHONY : example.cpp.o
-
-example.i: example.cpp.i
+# target to preprocess a source file
+example.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/artolc.dir/build.make CMakeFiles/artolc.dir/example.i
 .PHONY : example.i
 
-# target to preprocess a source file
-example.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/artolc.dir/build.make CMakeFiles/artolc.dir/example.cpp.i
-.PHONY : example.cpp.i
-
-example.s: example.cpp.s
-.PHONY : example.s
-
 # target to generate assembly for a file
-example.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/artolc.dir/build.make CMakeFiles/artolc.dir/example.cpp.s
-.PHONY : example.cpp.s
+example.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/artolc.dir/build.make CMakeFiles/artolc.dir/example.s
+.PHONY : example.s
 
 # Help Target
 help:
