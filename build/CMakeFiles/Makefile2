@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /mnt/nvme0/home/shs/ARTOLC/build
 
 # The main recursive "all" target.
 all: CMakeFiles/artolc.dir/all
+all: CMakeFiles/test.dir/all
 all: CMakeFiles/tree.dir/all
 .PHONY : all
 
@@ -73,6 +74,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/artolc.dir/clean
+clean: CMakeFiles/test.dir/clean
 clean: CMakeFiles/tree.dir/clean
 .PHONY : clean
 
@@ -103,13 +105,39 @@ CMakeFiles/artolc.dir/clean:
 .PHONY : CMakeFiles/artolc.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/test.dir
+
+# All Build rule for target.
+CMakeFiles/test.dir/all: CMakeFiles/tree.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles --progress-num=3,4 "Built target test"
+.PHONY : CMakeFiles/test.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles 0
+.PHONY : CMakeFiles/test.dir/rule
+
+# Convenience name for target.
+test: CMakeFiles/test.dir/rule
+.PHONY : test
+
+# clean rule for target.
+CMakeFiles/test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
+.PHONY : CMakeFiles/test.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tree.dir
 
 # All Build rule for target.
 CMakeFiles/tree.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree.dir/build.make CMakeFiles/tree.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree.dir/build.make CMakeFiles/tree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles --progress-num=3,4 "Built target tree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/nvme0/home/shs/ARTOLC/build/CMakeFiles --progress-num=5,6 "Built target tree"
 .PHONY : CMakeFiles/tree.dir/all
 
 # Build rule for subdir invocation for target.

@@ -1,0 +1,21 @@
+n=1000000,x=0
+insert time on different numa node:3121649
+lookup time on different numa node:2472274
+remove time on different numa node:1003716
+insert time on same numa node:3099380
+lookup time on same numa node:2465110
+remove time on same numa node:998434
+n=1000000,x=1
+insert time on different numa node:3405164
+lookup time on different numa node:2752943
+remove time on different numa node:1042005
+insert time on same numa node:3366792
+lookup time on same numa node:2729701
+remove time on same numa node:1031388
+n=1000000,x=2
+insert time on different numa node:3220293
+lookup time on different numa node:2161862
+remove time on different numa node:1457944
+insert time on same numa node:3151289
+lookup time on same numa node:2140186
+remove time on same numa node:1447168

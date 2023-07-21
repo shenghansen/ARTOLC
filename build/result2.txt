@@ -1,0 +1,210 @@
+n=1000000,第1次执行，x=0\n
+insert time on different numa node:351246
+lookup time on different numa node:248430
+remove time on different numa node:348700
+insert time on same numa node:350776
+lookup time on same numa node:249194
+remove time on same numa node:348979
+n=1000000,第2次执行，x=0\n
+insert time on different numa node:351492
+lookup time on different numa node:249819
+remove time on different numa node:351346
+insert time on same numa node:349362
+lookup time on same numa node:248633
+remove time on same numa node:348262
+n=1000000,第3次执行，x=0\n
+insert time on different numa node:350410
+lookup time on different numa node:249192
+remove time on different numa node:348551
+insert time on same numa node:349099
+lookup time on same numa node:247547
+remove time on same numa node:347056
+n=1000000,第4次执行，x=0\n
+insert time on different numa node:350695
+lookup time on different numa node:249672
+remove time on different numa node:348179
+insert time on same numa node:349378
+lookup time on same numa node:249306
+remove time on same numa node:347592
+n=1000000,第5次执行，x=0\n
+insert time on different numa node:351300
+lookup time on different numa node:250056
+remove time on different numa node:358000
+insert time on same numa node:349968
+lookup time on same numa node:248187
+remove time on same numa node:357386
+n=1000000,第6次执行，x=0\n
+insert time on different numa node:350725
+lookup time on different numa node:249621
+remove time on different numa node:349379
+insert time on same numa node:348668
+lookup time on same numa node:248679
+remove time on same numa node:348765
+n=1000000,第7次执行，x=0\n
+insert time on different numa node:350891
+lookup time on different numa node:249442
+remove time on different numa node:348196
+insert time on same numa node:348479
+lookup time on same numa node:248021
+remove time on same numa node:348226
+n=1000000,第8次执行，x=0\n
+insert time on different numa node:352173
+lookup time on different numa node:249736
+remove time on different numa node:349322
+insert time on same numa node:349071
+lookup time on same numa node:249130
+remove time on same numa node:348681
+n=1000000,第9次执行，x=0\n
+insert time on different numa node:353112
+lookup time on different numa node:249859
+remove time on different numa node:348363
+insert time on same numa node:349850
+lookup time on same numa node:248882
+remove time on same numa node:349034
+n=1000000,第10次执行，x=0\n
+insert time on different numa node:353193
+lookup time on different numa node:250848
+remove time on different numa node:348392
+insert time on same numa node:349252
+lookup time on same numa node:247193
+remove time on same numa node:350416
+n=1000000,第1次执行，x=1\n
+insert time on different numa node:397342
+lookup time on different numa node:271500
+remove time on different numa node:393071
+insert time on same numa node:391528
+lookup time on same numa node:268651
+remove time on same numa node:392834
+n=1000000,第2次执行，x=1\n
+insert time on different numa node:396796
+lookup time on different numa node:269947
+remove time on different numa node:392315
+insert time on same numa node:391285
+lookup time on same numa node:268832
+remove time on same numa node:393140
+n=1000000,第3次执行，x=1\n
+insert time on different numa node:397989
+lookup time on different numa node:271012
+remove time on different numa node:393005
+insert time on same numa node:394258
+lookup time on same numa node:269646
+remove time on same numa node:393929
+n=1000000,第4次执行，x=1\n
+insert time on different numa node:397111
+lookup time on different numa node:272400
+remove time on different numa node:393120
+insert time on same numa node:390478
+lookup time on same numa node:266487
+remove time on same numa node:391147
+n=1000000,第5次执行，x=1\n
+insert time on different numa node:393680
+lookup time on different numa node:269108
+remove time on different numa node:391996
+insert time on same numa node:392432
+lookup time on same numa node:269220
+remove time on same numa node:393413
+n=1000000,第6次执行，x=1\n
+insert time on different numa node:391621
+lookup time on different numa node:273356
+remove time on different numa node:392085
+insert time on same numa node:391332
+lookup time on same numa node:270359
+remove time on same numa node:392440
+n=1000000,第7次执行，x=1\n
+insert time on different numa node:392554
+lookup time on different numa node:270681
+remove time on different numa node:390912
+insert time on same numa node:391789
+lookup time on same numa node:269248
+remove time on same numa node:392421
+n=1000000,第8次执行，x=1\n
+insert time on different numa node:398152
+lookup time on different numa node:273460
+remove time on different numa node:396748
+insert time on same numa node:392504
+lookup time on same numa node:268650
+remove time on same numa node:392454
+n=1000000,第9次执行，x=1\n
+insert time on different numa node:395123
+lookup time on different numa node:269754
+remove time on different numa node:391522
+insert time on same numa node:391079
+lookup time on same numa node:267983
+remove time on same numa node:392374
+n=1000000,第10次执行，x=1\n
+insert time on different numa node:397626
+lookup time on different numa node:271824
+remove time on different numa node:394800
+insert time on same numa node:392781
+lookup time on same numa node:270966
+remove time on same numa node:394212
+n=1000000,第1次执行，x=2\n
+insert time on different numa node:835819
+lookup time on different numa node:237228
+remove time on different numa node:783922
+insert time on same numa node:825037
+lookup time on same numa node:233013
+remove time on same numa node:787124
+n=1000000,第2次执行，x=2\n
+insert time on different numa node:851923
+lookup time on different numa node:242651
+remove time on different numa node:792744
+insert time on same numa node:837908
+lookup time on same numa node:235818
+remove time on same numa node:787518
+n=1000000,第3次执行，x=2\n
+insert time on different numa node:877724
+lookup time on different numa node:242560
+remove time on different numa node:793874
+insert time on same numa node:831827
+lookup time on same numa node:235326
+remove time on same numa node:786716
+n=1000000,第4次执行，x=2\n
+insert time on different numa node:870105
+lookup time on different numa node:245104
+remove time on different numa node:796490
+insert time on same numa node:833272
+lookup time on same numa node:233270
+remove time on same numa node:791650
+n=1000000,第5次执行，x=2\n
+insert time on different numa node:870587
+lookup time on different numa node:244184
+remove time on different numa node:797077
+insert time on same numa node:829935
+lookup time on same numa node:233916
+remove time on same numa node:788142
+n=1000000,第6次执行，x=2\n
+insert time on different numa node:856988
+lookup time on different numa node:240493
+remove time on different numa node:798015
+insert time on same numa node:833026
+lookup time on same numa node:236325
+remove time on same numa node:789289
+n=1000000,第7次执行，x=2\n
+insert time on different numa node:859425
+lookup time on different numa node:241537
+remove time on different numa node:802001
+insert time on same numa node:821987
+lookup time on same numa node:233005
+remove time on same numa node:789120
+n=1000000,第8次执行，x=2\n
+insert time on different numa node:866584
+lookup time on different numa node:238245
+remove time on different numa node:798864
+insert time on same numa node:830378
+lookup time on same numa node:235522
+remove time on same numa node:793434
+n=1000000,第9次执行，x=2\n
+insert time on different numa node:867434
+lookup time on different numa node:243466
+remove time on different numa node:799668
+insert time on same numa node:829273
+lookup time on same numa node:234527
+remove time on same numa node:788109
+n=1000000,第10次执行，x=2\n
+insert time on different numa node:861893
+lookup time on different numa node:243825
+remove time on different numa node:799995
+insert time on same numa node:825279
+lookup time on same numa node:232442
+remove time on same numa node:790073

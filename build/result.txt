@@ -1,0 +1,422 @@
+n=100000000,第1次执行，x=0\n
+different numa node\n
+insert,100000000,2.682677
+lookup,100000000,3.382425
+remove,100000000,2.791216
+insert time :37276202
+lookup time :29564586
+remove time :35826673
+same numa node\n
+insert,100000000,2.687504
+lookup,100000000,3.452556
+remove,100000000,2.834722
+insert time :37209251
+lookup time :28964048
+remove time :35276834
+n=100000000,第2次执行，x=0\n
+different numa node\n
+insert,100000000,2.678643
+lookup,100000000,3.385884
+remove,100000000,2.785477
+insert time :37332335
+lookup time :29534381
+remove time :35900495
+same numa node\n
+insert,100000000,2.702551
+lookup,100000000,3.411729
+remove,100000000,2.810006
+insert time :37002078
+lookup time :29310648
+remove time :35587112
+n=100000000,第3次执行，x=0\n
+different numa node\n
+insert,100000000,2.684290
+lookup,100000000,3.383391
+remove,100000000,2.798001
+insert time :37253793
+lookup time :29556143
+remove time :35739805
+same numa node\n
+insert,100000000,2.718080
+lookup,100000000,3.398763
+remove,100000000,2.804184
+insert time :36790675
+lookup time :29422470
+remove time :35660997
+n=100000000,第4次执行，x=0\n
+different numa node\n
+insert,100000000,2.682462
+lookup,100000000,3.383882
+remove,100000000,2.793874
+insert time :37279193
+lookup time :29551859
+remove time :35792589
+same numa node\n
+insert,100000000,2.701988
+lookup,100000000,3.409472
+remove,100000000,2.817908
+insert time :37009792
+lookup time :29330052
+remove time :35487317
+n=100000000,第5次执行，x=0\n
+different numa node\n
+insert,100000000,2.678501
+lookup,100000000,3.380099
+remove,100000000,2.789290
+insert time :37334319
+lookup time :29584933
+remove time :35851413
+same numa node\n
+insert,100000000,2.710691
+lookup,100000000,3.410599
+remove,100000000,2.823424
+insert time :36890960
+lookup time :29320360
+remove time :35417987
+n=100000000,第6次执行，x=0\n
+different numa node\n
+insert,100000000,2.692848
+lookup,100000000,3.392654
+remove,100000000,2.805158
+insert time :37135406
+lookup time :29475450
+remove time :35648617
+same numa node\n
+insert,100000000,2.695374
+lookup,100000000,3.409776
+remove,100000000,2.812938
+insert time :37100597
+lookup time :29327440
+remove time :35550023
+n=100000000,第7次执行，x=0\n
+different numa node\n
+insert,100000000,2.671927
+lookup,100000000,3.373095
+remove,100000000,2.778561
+insert time :37426171
+lookup time :29646366
+remove time :35989849
+same numa node\n
+insert,100000000,2.696651
+lookup,100000000,3.456114
+remove,100000000,2.832439
+insert time :37083037
+lookup time :28934231
+remove time :35305258
+n=100000000,第8次执行，x=0\n
+different numa node\n
+insert,100000000,2.678085
+lookup,100000000,3.384397
+remove,100000000,2.778226
+insert time :37340115
+lookup time :29547362
+remove time :35994189
+same numa node\n
+insert,100000000,2.708268
+lookup,100000000,3.410418
+remove,100000000,2.814386
+insert time :36923972
+lookup time :29321923
+remove time :35531728
+n=100000000,第9次执行，x=0\n
+different numa node\n
+insert,100000000,2.685671
+lookup,100000000,3.385716
+remove,100000000,2.794419
+insert time :37234640
+lookup time :29535850
+remove time :35785608
+same numa node\n
+insert,100000000,2.694178
+lookup,100000000,3.454382
+remove,100000000,2.825240
+insert time :37117067
+lookup time :28948735
+remove time :35395221
+n=100000000,第10次执行，x=0\n
+different numa node\n
+insert,100000000,2.688718
+lookup,100000000,3.397341
+remove,100000000,2.804047
+insert time :37192451
+lookup time :29434781
+remove time :35662736
+same numa node\n
+insert,100000000,2.705358
+lookup,100000000,3.409650
+remove,100000000,2.820114
+insert time :36963680
+lookup time :29328527
+remove time :35459560
+n=100000000,第1次执行，x=1\n
+different numa node\n
+insert,100000000,1.322209
+lookup,100000000,1.627311
+remove,100000000,1.347610
+insert time :75630997
+lookup time :61451082
+remove time :74205450
+same numa node\n
+insert,100000000,1.638399
+lookup,100000000,2.090839
+remove,100000000,1.675593
+insert time :61035194
+lookup time :47827699
+remove time :59680380
+n=100000000,第2次执行，x=1\n
+different numa node\n
+insert,100000000,1.322511
+lookup,100000000,1.626896
+remove,100000000,1.345684
+insert time :75613750
+lookup time :61466756
+remove time :74311665
+same numa node\n
+insert,100000000,1.640906
+lookup,100000000,2.093232
+remove,100000000,1.677647
+insert time :60941951
+lookup time :47773020
+remove time :59607285
+n=100000000,第3次执行，x=1\n
+different numa node\n
+insert,100000000,1.323667
+lookup,100000000,1.627061
+remove,100000000,1.346587
+insert time :75547705
+lookup time :61460514
+remove time :74261808
+same numa node\n
+insert,100000000,1.643337
+lookup,100000000,2.091524
+remove,100000000,1.673165
+insert time :60851793
+lookup time :47812030
+remove time :59766971
+n=100000000,第4次执行，x=1\n
+different numa node\n
+insert,100000000,1.323585
+lookup,100000000,1.619887
+remove,100000000,1.347960
+insert time :75552376
+lookup time :61732705
+remove time :74186193
+same numa node\n
+insert,100000000,1.644844
+lookup,100000000,2.091467
+remove,100000000,1.682867
+insert time :60796033
+lookup time :47813328
+remove time :59422396
+n=100000000,第5次执行，x=1\n
+different numa node\n
+insert,100000000,1.322662
+lookup,100000000,1.617263
+remove,100000000,1.347586
+insert time :75605121
+lookup time :61832862
+remove time :74206782
+same numa node\n
+insert,100000000,1.642444
+lookup,100000000,2.093239
+remove,100000000,1.677614
+insert time :60884887
+lookup time :47772845
+remove time :59608474
+n=100000000,第6次执行，x=1\n
+different numa node\n
+insert,100000000,1.324686
+lookup,100000000,1.625998
+remove,100000000,1.346316
+insert time :75489602
+lookup time :61500702
+remove time :74276776
+same numa node\n
+insert,100000000,1.639943
+lookup,100000000,2.089454
+remove,100000000,1.678548
+insert time :60977728
+lookup time :47859401
+remove time :59575288
+n=100000000,第7次执行，x=1\n
+different numa node\n
+insert,100000000,1.314551
+lookup,100000000,1.622495
+remove,100000000,1.352455
+insert time :76071580
+lookup time :61633478
+remove time :73939606
+same numa node\n
+insert,100000000,1.641690
+lookup,100000000,2.091374
+remove,100000000,1.678748
+insert time :60912854
+lookup time :47815456
+remove time :59568206
+n=100000000,第8次执行，x=1\n
+different numa node\n
+insert,100000000,1.322508
+lookup,100000000,1.623066
+remove,100000000,1.349916
+insert time :75613907
+lookup time :61611808
+remove time :74078696
+same numa node\n
+insert,100000000,1.631773
+lookup,100000000,2.076201
+remove,100000000,1.694808
+insert time :61283026
+lookup time :48164889
+remove time :59003721
+n=100000000,第9次执行，x=1\n
+different numa node\n
+insert,100000000,1.322236
+lookup,100000000,1.645225
+remove,100000000,1.348218
+insert time :75629483
+lookup time :60781962
+remove time :74171987
+same numa node\n
+insert,100000000,1.642176
+lookup,100000000,2.090213
+remove,100000000,1.691174
+insert time :60894803
+lookup time :47842019
+remove time :59130538
+n=100000000,第10次执行，x=1\n
+different numa node\n
+insert,100000000,1.321190
+lookup,100000000,1.625924
+remove,100000000,1.348694
+insert time :75689333
+lookup time :61503486
+remove time :74145823
+same numa node\n
+insert,100000000,1.641168
+lookup,100000000,2.090917
+remove,100000000,1.676795
+insert time :60932203
+lookup time :47825916
+remove time :59637578
+n=100000000,第1次执行，x=2\n
+different numa node\n
+insert,100000000,0.694244
+lookup,100000000,1.495988
+remove,100000000,0.738191
+insert time :144041573
+lookup time :66845478
+remove time :135466261
+same numa node\n
+insert,100000000,0.824665
+lookup,100000000,1.977264
+remove,100000000,0.893577
+insert time :121261351
+lookup time :50574924
+remove time :111909751
+n=100000000,第2次执行，x=2\n
+different numa node\n
+insert,100000000,0.696578
+lookup,100000000,1.501925
+remove,100000000,0.743039
+insert time :143559038
+lookup time :66581218
+remove time :134582452
+same numa node\n
+insert,100000000,0.825472
+lookup,100000000,1.978263
+remove,100000000,0.897200
+insert time :121142881
+lookup time :50549389
+remove time :111457906
+n=100000000,第3次执行，x=2\n
+different numa node\n
+insert,100000000,0.694038
+lookup,100000000,1.504671
+remove,100000000,0.738081
+insert time :144084270
+lookup time :66459690
+remove time :135486406
+same numa node\n
+insert,100000000,0.821445
+lookup,100000000,1.985759
+remove,100000000,0.891046
+insert time :121736635
+lookup time :50358588
+remove time :112227690
+n=100000000,第4次执行，x=2\n
+different numa node\n
+insert,100000000,0.692875
+lookup,100000000,1.501419
+remove,100000000,0.739109
+insert time :144326162
+lookup time :66603660
+remove time :135298018
+same numa node\n
+insert,100000000,0.830141
+lookup,100000000,1.995430
+remove,100000000,0.898224
+insert time :120461465
+lookup time :50114519
+remove time :111330859
+n=100000000,第5次执行，x=2\n
+different numa node\n
+insert,100000000,0.694430
+lookup,100000000,1.501102
+remove,100000000,0.737605
+insert time :144002921
+lookup time :66617707
+remove time :135573917
+same numa node\n
+insert,100000000,0.822087
+lookup,100000000,1.979244
+remove,100000000,0.893469
+insert time :121641691
+lookup time :50524345
+remove time :111923288
+n=100000000,第6次执行，x=2\n
+different numa node\n
+insert,100000000,0.692744
+lookup,100000000,1.506814
+remove,100000000,0.741341
+insert time :144353421
+lookup time :66365173
+remove time :134890636
+same numa node\n
+insert,100000000,0.830080
+lookup,100000000,1.994316
+remove,100000000,0.900428
+insert time :120470363
+lookup time :50142505
+remove time :111058346
+n=100000000,第7次执行，x=2\n
+different numa node\n
+insert,100000000,0.694445
+lookup,100000000,1.503154
+remove,100000000,0.739632
+insert time :143999948
+lookup time :66526789
+remove time :135202330
+same numa node\n
+insert,100000000,0.829054
+lookup,100000000,1.978476
+remove,100000000,0.894226
+insert time :120619431
+lookup time :50543947
+remove time :111828564
+n=100000000,第8次执行，x=2\n
+different numa node\n
+insert,100000000,0.692835
+lookup,100000000,1.506201
+remove,100000000,0.738144
+insert time :144334513
+lookup time :66392203
+remove time :135474942
+same numa node\n
+insert,100000000,0.813745
+lookup,100000000,1.983567
+remove,100000000,0.885584
+insert time :122888580
+lookup time :50414241
+remove time :112919823
+n=100000000,第9次执行，x=2\n
+different numa node\n

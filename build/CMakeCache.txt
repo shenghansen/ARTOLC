@@ -228,6 +228,9 @@ EXECUTABLE_OUTPUT_PATH:PATH=
 //Single output directory for building all libraries.
 LIBRARY_OUTPUT_PATH:PATH=
 
+//No help, variable specified on the command line.
+NUMA_NODE:UNINITIALIZED=4
+
 
 ########################
 # INTERNAL cache entries

@@ -8,10 +8,10 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/artolc",
+            "program": "${workspaceFolder}/build/test",
             "args": [
-                "100",
-                "0"
+                "10000000",
+                "2"
             ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

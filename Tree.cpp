@@ -6,10 +6,18 @@
 #include "Key.h"
 
 
+
 namespace ART_OLC {
 
+    #ifdef NUMA_NODE
+    
     Tree::Tree(LoadKeyFunction loadKey) : root(new( nullptr, 0)N256(nullptr, 0)), loadKey(loadKey) {
     }
+    #else
+    Tree::Tree(LoadKeyFunction loadKey) : root(new N256(nullptr, 0)), loadKey(loadKey) {
+    }
+    #endif
+    
 
     Tree::~Tree() {
         N::deleteChildren(root);
@@ -387,7 +395,11 @@ namespace ART_OLC {
                         goto restart;
                     }
                     // 1) Create new node which will be parent of node, Set common prefix, level to this node
+                    #ifdef NUMA_NODE
                     auto newNode = new(node->getPrefix(), nextLevel - level) N4(node->getPrefix(), nextLevel - level);
+                    #else
+                    auto newNode = new N4(node->getPrefix(), nextLevel - level);
+                    #endif
 
                     // 2)  add node and (tid, *k) as children
                     newNode->insert(k[nextLevel], N::setLeaf(tid));
@@ -444,7 +456,11 @@ namespace ART_OLC {
                     prefixLength++;
                 }
 
+                #ifdef NUMA_NODE
                 auto n4 = new(&k[level], prefixLength) N4(&k[level], prefixLength);
+                #else
+                auto n4 = new N4(&k[level], prefixLength);
+                #endif
                 n4->insert(k[level + prefixLength], N::setLeaf(tid));
                 n4->insert(key[level + prefixLength], nextNode);
                 N::change(node, k[level - 1], n4);

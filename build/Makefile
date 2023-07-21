@@ -130,6 +130,19 @@ artolc/fast:
 .PHONY : artolc/fast
 
 #=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
 # Target rules for targets named tree
 
 # Build rule for target.
@@ -172,6 +185,21 @@ example.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/artolc.dir/build.make CMakeFiles/artolc.dir/example.s
 .PHONY : example.s
 
+# target to build an object file
+main.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.o
+.PHONY : main.o
+
+# target to preprocess a source file
+main.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.i
+.PHONY : main.i
+
+# target to generate assembly for a file
+main.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.s
+.PHONY : main.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -181,6 +209,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... artolc"
+	@echo "... test"
 	@echo "... tree"
 	@echo "... Tree.o"
 	@echo "... Tree.i"
@@ -188,6 +217,9 @@ help:
 	@echo "... example.o"
 	@echo "... example.i"
 	@echo "... example.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

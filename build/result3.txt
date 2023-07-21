@@ -1,0 +1,271 @@
+n=10000000,第1次执行，x=0\n
+insert,10000000,3.138316
+lookup,10000000,4.375284
+remove,10000000,3.317091
+insert time on different numa node:3186422
+lookup time on different numa node:2285566
+remove time on different numa node:3014690
+insert,10000000,3.143943
+lookup,10000000,4.391177
+remove,10000000,3.335626
+insert time on same numa node:3180719
+lookup time on same numa node:2277294
+remove time on same numa node:2997938
+n=10000000,第2次执行，x=0\n
+insert,10000000,3.116037
+lookup,10000000,4.380700
+remove,10000000,3.301513
+insert time on different numa node:3209204
+lookup time on different numa node:2282740
+remove time on different numa node:3028914
+insert,10000000,3.146768
+lookup,10000000,4.413579
+remove,10000000,3.336056
+insert time on same numa node:3177864
+lookup time on same numa node:2265735
+remove time on same numa node:2997552
+n=10000000,第3次执行，x=0\n
+insert,10000000,3.141341
+lookup,10000000,4.371604
+remove,10000000,3.317911
+insert time on different numa node:3183354
+lookup time on different numa node:2287490
+remove time on different numa node:3013945
+insert,10000000,3.151348
+lookup,10000000,4.389858
+remove,10000000,3.334866
+insert time on same numa node:3173245
+lookup time on same numa node:2277978
+remove time on same numa node:2998621
+n=10000000,第4次执行，x=0\n
+insert,10000000,3.128537
+lookup,10000000,4.370033
+remove,10000000,3.310291
+insert time on different numa node:3196382
+lookup time on different numa node:2288312
+remove time on different numa node:3020882
+insert,10000000,3.145894
+lookup,10000000,4.384540
+remove,10000000,3.339099
+insert time on same numa node:3178747
+lookup time on same numa node:2280741
+remove time on same numa node:2994820
+n=10000000,第5次执行，x=0\n
+insert,10000000,3.137256
+lookup,10000000,4.375290
+remove,10000000,3.292030
+insert time on different numa node:3187499
+lookup time on different numa node:2285563
+remove time on different numa node:3037639
+insert,10000000,3.149699
+lookup,10000000,4.389536
+remove,10000000,3.309705
+insert time on same numa node:3174907
+lookup time on same numa node:2278145
+remove time on same numa node:3021417
+n=10000000,第6次执行，x=0\n
+insert,10000000,3.127503
+lookup,10000000,4.564443
+remove,10000000,3.297884
+insert time on different numa node:3197439
+lookup time on different numa node:2190848
+remove time on different numa node:3032247
+insert,10000000,3.146561
+lookup,10000000,4.389972
+remove,10000000,3.327944
+insert time on same numa node:3178073
+lookup time on same numa node:2277919
+remove time on same numa node:3004858
+n=10000000,第7次执行，x=0\n
+insert,10000000,3.130450
+lookup,10000000,4.396161
+remove,10000000,3.313991
+insert time on different numa node:3194429
+lookup time on different numa node:2274712
+remove time on different numa node:3017510
+insert,10000000,3.140300
+lookup,10000000,4.408112
+remove,10000000,3.335906
+insert time on same numa node:3184409
+lookup time on same numa node:2268545
+remove time on same numa node:2997686
+n=10000000,第8次执行，x=0\n
+insert,10000000,3.135664
+lookup,10000000,4.378378
+remove,10000000,3.310049
+insert time on different numa node:3189117
+lookup time on different numa node:2283951
+remove time on different numa node:3021103
+insert,10000000,3.135694
+lookup,10000000,4.390218
+remove,10000000,3.328357
+insert time on same numa node:3189087
+lookup time on same numa node:2277791
+remove time on same numa node:3004485
+n=10000000,第9次执行，x=0\n
+insert,10000000,3.123296
+lookup,10000000,4.371115
+remove,10000000,3.314768
+insert time on different numa node:3201746
+lookup time on different numa node:2287746
+remove time on different numa node:3016802
+insert,10000000,3.147427
+lookup,10000000,4.392336
+remove,10000000,3.336106
+insert time on same numa node:3177198
+lookup time on same numa node:2276693
+remove time on same numa node:2997507
+n=10000000,第10次执行，x=0\n
+insert,10000000,3.123444
+lookup,10000000,4.422683
+remove,10000000,3.304211
+insert time on different numa node:3201594
+lookup time on different numa node:2261071
+remove time on different numa node:3026441
+insert,10000000,3.143303
+lookup,10000000,4.391178
+remove,10000000,3.317842
+insert time on same numa node:3181367
+lookup time on same numa node:2277293
+remove time on same numa node:3014007
+n=10000000,第1次执行，x=1\n
+insert,10000000,2.491501
+lookup,10000000,3.379534
+remove,10000000,2.633962
+insert time on different numa node:4013645
+lookup time on different numa node:2958988
+remove time on different numa node:3796562
+insert,10000000,2.592618
+lookup,10000000,3.541142
+remove,10000000,2.731687
+insert time on same numa node:3857105
+lookup time on same numa node:2823948
+remove time on same numa node:3660741
+n=10000000,第2次执行，x=1\n
+insert,10000000,2.475838
+lookup,10000000,3.362067
+remove,10000000,2.620432
+insert time on different numa node:4039037
+lookup time on different numa node:2974361
+remove time on different numa node:3816165
+insert,10000000,2.575381
+lookup,10000000,3.508270
+remove,10000000,2.722022
+insert time on same numa node:3882920
+lookup time on same numa node:2850408
+remove time on same numa node:3673740
+n=10000000,第3次执行，x=1\n
+insert,10000000,2.472328
+lookup,10000000,3.372388
+remove,10000000,2.626372
+insert time on different numa node:4044770
+lookup time on different numa node:2965258
+remove time on different numa node:3807534
+insert,10000000,2.563385
+lookup,10000000,3.482778
+remove,10000000,2.716951
+insert time on same numa node:3901091
+lookup time on same numa node:2871271
+remove time on same numa node:3680596
+n=10000000,第4次执行，x=1\n
+insert,10000000,2.452691
+lookup,10000000,3.339606
+remove,10000000,2.611552
+insert time on different numa node:4077155
+lookup time on different numa node:2994365
+remove time on different numa node:3829141
+insert,10000000,2.572719
+lookup,10000000,3.504507
+remove,10000000,2.726831
+insert time on same numa node:3886938
+lookup time on same numa node:2853468
+remove time on same numa node:3667261
+n=10000000,第5次执行，x=1\n
+insert,10000000,2.464104
+lookup,10000000,3.356333
+remove,10000000,2.614534
+insert time on different numa node:4058271
+lookup time on different numa node:2979442
+remove time on different numa node:3824774
+insert,10000000,2.580108
+lookup,10000000,3.503345
+remove,10000000,2.723510
+insert time on same numa node:3875807
+lookup time on same numa node:2854415
+remove time on same numa node:3671733
+n=10000000,第6次执行，x=1\n
+insert,10000000,2.454644
+lookup,10000000,3.324654
+remove,10000000,2.596131
+insert time on different numa node:4073911
+lookup time on different numa node:3007832
+remove time on different numa node:3851886
+insert,10000000,2.558437
+lookup,10000000,3.485864
+remove,10000000,2.719231
+insert time on same numa node:3908636
+lookup time on same numa node:2868729
+remove time on same numa node:3677510
+n=10000000,第7次执行，x=1\n
+insert,10000000,2.507155
+lookup,10000000,3.430552
+remove,10000000,2.651315
+insert time on different numa node:3988584
+lookup time on different numa node:2914983
+remove time on different numa node:3771713
+insert,10000000,2.591929
+lookup,10000000,3.544916
+remove,10000000,2.736982
+insert time on same numa node:3858130
+lookup time on same numa node:2820941
+remove time on same numa node:3653660
+n=10000000,第8次执行，x=1\n
+insert,10000000,2.497599
+lookup,10000000,3.411114
+remove,10000000,2.642855
+insert time on different numa node:4003845
+lookup time on different numa node:2931594
+remove time on different numa node:3783787
+insert,10000000,2.576746
+lookup,10000000,3.500550
+remove,10000000,2.725003
+insert time on same numa node:3880863
+lookup time on same numa node:2856694
+remove time on same numa node:3669721
+n=10000000,第9次执行，x=1\n
+insert,10000000,2.497698
+lookup,10000000,3.409635
+remove,10000000,2.648378
+insert time on different numa node:4003686
+lookup time on different numa node:2932865
+remove time on different numa node:3775896
+insert,10000000,2.588534
+lookup,10000000,3.525687
+remove,10000000,2.754038
+insert time on same numa node:3863190
+lookup time on same numa node:2836327
+remove time on same numa node:3631032
+n=10000000,第10次执行，x=1\n
+insert,10000000,2.489644
+lookup,10000000,3.562012
+remove,10000000,2.646912
+insert time on different numa node:4016638
+lookup time on different numa node:2807402
+remove time on different numa node:3777988
+insert,10000000,2.575222
+lookup,10000000,3.494194
+remove,10000000,2.729287
+insert time on same numa node:3883161
+lookup time on same numa node:2861890
+remove time on same numa node:3663961
+n=10000000,第1次执行，x=2\n
+n=10000000,第2次执行，x=2\n
+n=10000000,第3次执行，x=2\n
+n=10000000,第4次执行，x=2\n
+n=10000000,第5次执行，x=2\n
+n=10000000,第6次执行，x=2\n
+n=10000000,第7次执行，x=2\n
+n=10000000,第8次执行，x=2\n
+n=10000000,第9次执行，x=2\n
+n=10000000,第10次执行，x=2\n
+

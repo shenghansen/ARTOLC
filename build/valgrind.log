@@ -1,0 +1,27 @@
+==1680832== Memcheck, a memory error detector
+==1680832== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1680832== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==1680832== Command: ./artolc 100000000 0
+==1680832== 
+multi threaded:
+==1680832== Warning: set address range perms: large range [0x5227040, 0x34d17840) (undefined)
+==1680832== Warning: set address range perms: large range [0x5227028, 0x34d17858) (noaccess)
+operation,n,ops/s
+insert,100000000,0.096476
+lookup,100000000,0.113565
+remove,100000000,0.095128
+==1680832== 
+==1680832== HEAP SUMMARY:
+==1680832==     in use at exit: 18,859 bytes in 62 blocks
+==1680832==   total heap usage: 5,507,704 allocs, 5,507,642 frees, 1,200,363,017 bytes allocated
+==1680832== 
+==1680832== LEAK SUMMARY:
+==1680832==    definitely lost: 0 bytes in 0 blocks
+==1680832==    indirectly lost: 0 bytes in 0 blocks
+==1680832==      possibly lost: 17,024 bytes in 56 blocks
+==1680832==    still reachable: 1,835 bytes in 6 blocks
+==1680832==         suppressed: 0 bytes in 0 blocks
+==1680832== Rerun with --leak-check=full to see details of leaked memory
+==1680832== 
+==1680832== For lists of detected and suppressed errors, rerun with: -s
+==1680832== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
