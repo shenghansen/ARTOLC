@@ -9,8 +9,11 @@
 #include <stdint.h>
 #include <atomic>
 #include <string.h>
+#include <numa.h>
+#include <atomic>
 #include "Key.h"
 #include "Epoche.h"
+// #include "MemoryPool.cpp"
 
 using TID = uint64_t;
 
@@ -29,6 +32,54 @@ namespace ART_OLC {
         N48 = 2,
         N256 = 3
     };
+
+    const size_t MEM = size_t(100)<<30;
+    class MemoryPool{
+    public:
+        MemoryPool(){
+            origin = numa_alloc_onnode(MEM,4);
+            top= static_cast<char* >(origin);
+        }
+        ~MemoryPool(){
+            numa_free(origin,MEM);
+        }
+
+        void* allocate(ART_OLC::NTypes n){
+            char* a;
+            switch (n){
+            case ART_OLC::NTypes::N4:
+                //printf("%p\n",top.load());
+                a = top.fetch_add(64);
+                //printf("%p\n",top.load());
+                return a;
+                break;
+            case ART_OLC::NTypes::N16:
+                //printf("%p\n",top.load());
+                a = top.fetch_add(168);
+                //printf("%p\n",top.load());
+                return a;
+                break;
+            case ART_OLC::NTypes::N48:
+                return top.fetch_add(664);
+                //printf("%p\n",top.load());
+                break;
+            case ART_OLC::NTypes::N256:
+                return top.fetch_add(2072);
+                //printf("%p\n",top.load());
+                break;
+            default:
+            return nullptr;
+                break;
+            }
+            
+        }
+    private:
+        std::atomic<char*> top;
+        void * origin;
+        
+    };
+
+     static MemoryPool memoryPool;
 
     static constexpr uint32_t maxStoredPrefixLength = 11;
 
@@ -143,6 +194,22 @@ namespace ART_OLC {
         N4(const uint8_t *prefix, uint32_t prefixLength) : N(NTypes::N4, prefix,
                                                                              prefixLength) { }
 
+        #ifdef NUMA_NODE
+        void* operator new(size_t size,const uint8_t *prefix, uint32_t prefixLength){
+            void* n = memoryPool.allocate(NTypes::N4);
+            // printf("numa alloc %p\n",n);
+            if (n==nullptr){
+                printf("numa alloc failed \n");
+            }
+            return n;
+            
+        }
+
+        void operator delete(void* ptr){
+            // numa_free(ptr,sizeof(N4));
+        }
+        #endif
+
         void insert(uint8_t key, N *n);
 
         template<class NODE>
@@ -201,6 +268,21 @@ namespace ART_OLC {
             memset(children, 0, sizeof(children));
         }
 
+        #ifdef NUMA_NODE
+        void* operator new(size_t size,const uint8_t *prefix, uint32_t prefixLength){
+            void* n = memoryPool.allocate(NTypes::N16);
+            if (n==nullptr){
+                printf("numa alloc failed \n");
+            }
+            return n;
+            
+        }
+
+        void operator delete(void* ptr){
+            // numa_free(ptr,sizeof(N4));
+        }
+        #endif
+
         void insert(uint8_t key, N *n);
 
         template<class NODE>
@@ -236,6 +318,21 @@ namespace ART_OLC {
             memset(children, 0, sizeof(children));
         }
 
+        #ifdef NUMA_NODE
+        void* operator new(size_t size,const uint8_t *prefix, uint32_t prefixLength){
+            void* n = memoryPool.allocate(NTypes::N48);
+            if (n==nullptr){
+                printf("numa alloc failed \n");
+            }
+            return n;
+            
+        }
+
+        void operator delete(void* ptr){
+            // numa_free(ptr,sizeof(N4));
+        }
+        #endif
+
         void insert(uint8_t key, N *n);
 
         template<class NODE>
@@ -267,6 +364,21 @@ namespace ART_OLC {
                                                                                prefixLength) {
             memset(children, '\0', sizeof(children));
         }
+
+        #ifdef NUMA_NODE
+        void* operator new(size_t size,const uint8_t *prefix, uint32_t prefixLength){
+            void* n = memoryPool.allocate(NTypes::N256);
+            if (n==nullptr){
+                printf("numa alloc failed \n");
+            }
+            return n;
+            
+        }
+
+        void operator delete(void* ptr){
+            // numa_free(ptr,sizeof(N4));
+        }
+        #endif
 
         void insert(uint8_t key, N *val);
 

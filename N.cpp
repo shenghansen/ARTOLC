@@ -7,6 +7,8 @@
 #include "N48.cpp"
 #include "N256.cpp"
 
+
+
 namespace ART_OLC {
 
     void N::setType(NTypes type) {
@@ -112,7 +114,11 @@ namespace ART_OLC {
             return;
         }
 
+        #ifdef NUMA_NODE
+        auto nBig = new(n->getPrefix(), n->getPrefixLength()) biggerN(n->getPrefix(), n->getPrefixLength());
+        #else
         auto nBig = new biggerN(n->getPrefix(), n->getPrefixLength());
+        #endif
         n->copyTo(nBig);
         nBig->insert(key, val);
 
@@ -224,7 +230,11 @@ namespace ART_OLC {
             return;
         }
 
+        #ifdef NUMA_NODE
+        auto nSmall = new (n->getPrefix(), n->getPrefixLength())smallerN(n->getPrefix(), n->getPrefixLength());
+        #else
         auto nSmall = new smallerN(n->getPrefix(), n->getPrefixLength());
+        #endif
 
         n->copyTo(nSmall);
         nSmall->remove(key);

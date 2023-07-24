@@ -7,6 +7,7 @@
 #include <assert.h>
 #include <iostream>
 #include "Epoche.h"
+#include "N.h"
 using namespace ART;
 
 
@@ -101,7 +102,9 @@ inline void Epoche::exitEpocheAndCleanup(ThreadInfo &epocheInfo) {
 
             if (cur->epoche < oldestEpoche) {
                 for (std::size_t i = 0; i < cur->nodesCount; ++i) {
-                    operator delete(cur->nodes[i]);
+                    // operator delete(cur->nodes[i]);
+                    // delete cur->nodes[i];
+                    ART_OLC::N::deleteNode(static_cast<ART_OLC::N*>(cur->nodes[i]));
                 }
                 deletionList.remove(cur, prev);
             } else {
@@ -128,7 +131,8 @@ inline Epoche::~Epoche() {
 
             assert(cur->epoche < oldestEpoche);
             for (std::size_t i = 0; i < cur->nodesCount; ++i) {
-                operator delete(cur->nodes[i]);
+                // operator delete(cur->nodes[i]);
+                ART_OLC::N::deleteNode(static_cast<ART_OLC::N*>(cur->nodes[i]));
             }
             d.remove(cur, prev);
             cur = next;

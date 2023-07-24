@@ -1,5 +1,6 @@
 PROJECT(ARTOLC)
-
+add_definitions(-DNUMA_NODE=4)
+add_compile_options("-g")
 add_executable(artolc example.cpp)
 add_library(tree Tree.cpp)
-target_link_libraries(artolc tbb tree)
+target_link_libraries(artolc tbb tree numa)
