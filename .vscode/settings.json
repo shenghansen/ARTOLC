@@ -3,6 +3,7 @@
         "*.cu": "cuda-cpp",
         "*.dox": "doxygen",
         "atomic": "cpp",
-        "memory_resource": "cpp"
+        "memory_resource": "cpp",
+        "chrono": "cpp"
     }
 }

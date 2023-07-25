@@ -37,7 +37,11 @@ namespace ART_OLC {
     class MemoryPool{
     public:
         MemoryPool(){
+            #ifdef NUMA_NODE
+            origin = numa_alloc_onnode(MEM,NUMA_NODE);
+            #else
             origin = numa_alloc_onnode(MEM,4);
+            #endif
             top= static_cast<char* >(origin);
         }
         ~MemoryPool(){
@@ -76,7 +80,6 @@ namespace ART_OLC {
     private:
         std::atomic<char*> top;
         void * origin;
-        
     };
 
      static MemoryPool memoryPool;
